@@ -1,0 +1,74 @@
+body {
+    background-color: #eda28a;
+}
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #e0957b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+}
+
+.smallBox {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+#link-output {
+    width:375px;
+    font-size: 25px;
+    overflow: hidden;
+    word-wrap: ;
+}
+
+
+#sudoku {
+    display: flex;
+    height: 320px;
+    width: 320px;
+    flex-direction: column;
+}
+
+#sudoku>div {
+    display: flex;
+    border-bottom: 1px black solid;
+}
+
+#sudoku>div input {
+    display: flex;
+    border-right: 1px black solid;
+}
+
+#sudoku>div:nth-of-type(3), #sudoku>div:nth-of-type(6) {
+    border-bottom: 2px black solid;
+}
+
+#sudoku>div input:nth-of-type(3), #sudoku>div input:nth-of-type(6) {
+    border-right: 2px black solid;
+}
+
+#sudoku>div:last-of-type {
+    border-bottom: none;
+}
+
+#sudoku>div input:last-of-type {
+    border-right: none;
+}
+
+input {
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #e0957b;
+}
