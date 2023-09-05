@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: center;
     border-radius: 15%;
 }
 
@@ -18,18 +19,36 @@ body {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
-    height: 50px;
+    height: 75px;
     align-items: center;
     display: flex;
 }
 
 #link-output {
     width:375px;
+    height: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     font-size: 25px;
-    overflow: hidden;
-    word-wrap: ;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
+#copy-link {
+    margin-left: 10px;
+    height: 25px;
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid #e0957b;
+    cursor: pointer;
+}
+
+h1 {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 #sudoku {
     display: flex;
@@ -64,6 +83,12 @@ body {
     border-right: none;
 }
 
+#loader {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 input {
     border: none;
     width: 30px;
@@ -71,4 +96,6 @@ input {
     font-size: 25px;
     text-align: center;
     background-color: #e0957b;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
 }
